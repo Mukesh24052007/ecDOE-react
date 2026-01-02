@@ -11,7 +11,7 @@ const Chatbot = () => {
         theme: "light",
         customCssUrl: "/chainlit.css",
         button: {
-          imageUrl: "/images/logo/chat-button3.png",
+          imageUrl: "/images/logo/chat-button4.png",
           className: "w-20 h-25",
         },
       });
