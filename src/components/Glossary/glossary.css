@@ -1,0 +1,88 @@
+/* Glossary */
+#words-list {
+  text-align: center;
+}
+
+#words-list h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.word-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+.word-row .word,
+.word-row .ipa,
+.word-row .speaker {
+  text-align: center;
+}
+
+.word-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.word {
+  font-size: 1.3em;
+  margin-right: 16px;
+}
+.speaker {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  outline: none;
+}
+.speaker svg {
+  fill: #333;
+  transition: fill 0.2s;
+}
+
+.speaker:hover svg {
+  fill: #0078d7;
+}
+
+.speaker {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Hover effect: slight scale and color glow */
+.speaker:hover {
+  transform: scale(1.2) rotate(10deg);
+  filter: drop-shadow(0 0 6px #4f46e5);
+}
+
+/* Optional: add focus effect for accessibility */
+.speaker:focus {
+  outline: none;
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px #3b82f6);
+}
+
+/* SVG color change on hover */
+.speaker svg path {
+  transition: fill 0.2s ease;
+}
+
+.speaker:hover svg path {
+  fill: #4f46e5;
+}
+
+.speaker:active {
+  transform: scale(0.95) rotate(-5deg);
+  filter: drop-shadow(0 0 4px #4f46e5);
+}

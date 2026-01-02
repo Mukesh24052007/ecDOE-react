@@ -1,0 +1,401 @@
+.logo {
+  margin-top: 25px;
+  /* Ensure logo background matches header (white) and is centered 
+  background: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; /* Adjust as needed for header height */
+}
+.logo img {
+  max-height: 60px; /* Adjust for best fit */
+  width: auto;
+  background: transparent; /* Ensures transparent background for logo */
+  border-radius: 8px; /* Optional: smooth corners */
+  box-shadow: none;
+  padding: 4px 12px; /* Optional: some padding for visual balance */
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a73e8; /* Example: blue from logo, adjust as needed */
+  margin-left: 12px;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  white-space: normal;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo-text {
+    margin-left: 5px;
+  }
+}
+.logo-text .company-main {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #032f6a;
+}
+.logo-text .company-sub {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: 1px;
+}
+.main-wrapper.header-transparent {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.header-top-2 .main-menu ul li a {
+  color: #ffffff;
+}
+.header-top-2 .main-menu ul li a::before {
+  background: #ffffff;
+}
+.header-top-2 .main-menu ul li a::after {
+  background: #ffffff;
+}
+
+.is-sticky .header-top-2 {
+  background: #09c7e0;
+}
+
+.header-sticky.is-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-top {
+  position: relative;
+}
+
+.inner-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.is-sticky .inner-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 999;
+  position: fixed;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.is-sticky .logo {
+  margin-top: 12px;
+}
+@media only screen and (max-width: 767px) {
+  .is-sticky .logo {
+    margin-top: 2px;
+  }
+}
+.is-sticky .main-menu ul li {
+  padding: 25px 0;
+}
+
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.main-menu ul li {
+  margin-right: 25px;
+  padding: 40px 0;
+  display: inline-block;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .main-menu ul li {
+    margin-right: 18px;
+  }
+}
+.main-menu ul li a {
+  padding: 0;
+  color: #2d5016;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.main-menu ul li a::before {
+  content: "";
+  background: #2d5016;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2px;
+  left: 0%;
+  opacity: 0;
+  -ms-filter: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 0 2px;
+}
+.main-menu ul li a::after {
+  content: "";
+  background: #2d5016;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2px;
+  right: 0%;
+  opacity: 0;
+  -ms-filter: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 0 2px;
+}
+.main-menu ul li:last-child {
+  margin-right: 0;
+}
+.main-menu ul li:hover > a {
+  color: #ff4500;
+}
+.main-menu ul li:hover > a::before {
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: 1;
+  left: 50%;
+  background: #ff4500;
+}
+.main-menu ul li:hover > a::after {
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: 1;
+  right: 50%;
+  background: #ff4500;
+}
+.main-menu ul li.active a {
+  color: #ff4500;
+}
+.main-menu ul li.active a::before {
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: 1;
+  left: 50%;
+  background: #ff4500;
+}
+.main-menu ul li.active a::after {
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: 1;
+  right: 50%;
+  background: #ff4500;
+}
+
+.mobile-menu {
+  float: left;
+  width: 100% !important;
+  position: relative !important;
+}
+.mobile-menu .mean-bar {
+  position: relative;
+  /*---- Mean Nav ----*/
+}
+.mobile-menu .mean-bar .meanmenu-reveal {
+  position: absolute;
+  right: 53px; /* Adjusted to align with logo */
+  color: #000;
+}
+/* ignored for now */
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile-menu .mean-bar .meanmenu-reveal {
+    top: -45px;
+  }
+} */
+ /* ignored for now */
+/* @media only screen and (max-width: 767px) {
+  .mobile-menu .mean-bar .meanmenu-reveal {
+    top: -40px;
+  }
+} */
+.mobile-menu .mean-bar .meanmenu-reveal span {
+  position: relative;
+  /*---- Menu Open ----*/
+  /*---- Menu Close ----*/
+}
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-bar {
+  height: 2px;
+  width: 26px;
+  background-color: #000000;
+  display: block;
+  margin: 8px 0;
+}
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-bar::before, .mobile-menu .mean-bar .meanmenu-reveal span.menu-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-bar::before {
+  top: -8px;
+}
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-bar::after {
+  bottom: -8px;
+}
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-close {
+  height: 2px;
+  width: 26px;
+  background-color: transparent;
+  display: block;
+  margin: 8px 0;
+}
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-close::before, .mobile-menu .mean-bar .meanmenu-reveal span.menu-close::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-close::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-close::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.mobile-menu .mean-bar .mean-nav {
+  background-color: #ddd;
+}
+.mobile-menu .mean-bar .mean-nav > ul {
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  border-top: 0px solid transparent;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile-menu .mean-bar .mean-nav > ul {
+    max-height: 320px;
+    overflow-y: auto;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .mobile-menu .mean-bar .mean-nav > ul {
+    max-height: 320px;
+    overflow-y: auto;
+  }
+}
+.mobile-menu .mean-bar .mean-nav > ul li {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  /*---- Sub Menu & Mega Menu ----*/
+}
+.mobile-menu .mean-bar .mean-nav > ul li a {
+  font-size: 13px;
+  display: block;
+  color: #000000;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  line-height: 44px;
+  position: relative;
+  border-top: 1px solid #eeeeee;
+  padding: 0 40px 0 20px;
+  /*---- Menu Expand For Sub Menu ----*/
+}
+.mobile-menu .mean-bar .mean-nav > ul li a:hover {
+  color: #09c7e0;
+  padding-left: 25px;
+}
+.mobile-menu .mean-bar .mean-nav > ul li a.mean-expand {
+  border: 1px solid #eeeeee;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  right: -1px;
+  top: 0;
+  font-size: 20px !important;
+  color: #fff;
+  line-height: 44px;
+  height: 46px;
+  width: 40px;
+  text-align: center;
+  padding: 0;
+}
+.mobile-menu .mean-bar .mean-nav > ul li a.mean-expand.mean-clicked {
+  line-height: 40px;
+}
+.mobile-menu .mean-bar .mean-nav > ul li .sub-menu, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu, .mobile-menu .mean-bar .mean-nav > ul li ul {
+  position: static;
+  background-color: #222;
+  margin: 0;
+  padding: 0 !important;
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0;
+  display: none;
+  float: left;
+  width: 100%;
+}
+.mobile-menu .mean-bar .mean-nav > ul li .sub-menu li, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li, .mobile-menu .mean-bar .mean-nav > ul li ul li {
+  padding: 0;
+  margin: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  border-right: 0px solid transparent;
+  width: 100%;
+  display: block !important;
+  float: left;
+  width: 100%;
+}
+.mobile-menu .mean-bar .mean-nav > ul li .sub-menu li a, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li a, .mobile-menu .mean-bar .mean-nav > ul li ul li a {
+  font-size: 12px;
+}
+.mobile-menu .mean-bar .mean-nav > ul li .sub-menu li a::before, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li a::before, .mobile-menu .mean-bar .mean-nav > ul li ul li a::before {
+  display: none;
+}
+.mobile-menu .mean-bar .mean-nav > ul li .sub-menu li .sub-menu, .mobile-menu .mean-bar .mean-nav > ul li .sub-menu li ul, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li .sub-menu, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li ul, .mobile-menu .mean-bar .mean-nav > ul li ul li .sub-menu, .mobile-menu .mean-bar .mean-nav > ul li ul li ul {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.mobile-menu .mean-bar .mean-nav > ul li .sub-menu li .sub-menu li a, .mobile-menu .mean-bar .mean-nav > ul li .sub-menu li ul li a, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li .sub-menu li a, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li ul li a, .mobile-menu .mean-bar .mean-nav > ul li ul li .sub-menu li a, .mobile-menu .mean-bar .mean-nav > ul li ul li ul li a {
+  border-top: 1px solid #dddddd;
+}
+.mobile-menu .mean-bar .mean-nav > ul li .sub-menu li .sub-menu .sub-menu li a, .mobile-menu .mean-bar .mean-nav > ul li .sub-menu li .sub-menu ul li a, .mobile-menu .mean-bar .mean-nav > ul li .sub-menu li ul .sub-menu li a, .mobile-menu .mean-bar .mean-nav > ul li .sub-menu li ul ul li a, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li .sub-menu .sub-menu li a, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li .sub-menu ul li a, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li ul .sub-menu li a, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li ul ul li a, .mobile-menu .mean-bar .mean-nav > ul li ul li .sub-menu .sub-menu li a, .mobile-menu .mean-bar .mean-nav > ul li ul li .sub-menu ul li a, .mobile-menu .mean-bar .mean-nav > ul li ul li ul .sub-menu li a, .mobile-menu .mean-bar .mean-nav > ul li ul li ul ul li a {
+  border-top: 1px solid #eeeeee;
+}
+.mobile-menu .mean-bar .mean-nav > ul li .sub-menu li .sub-menu .sub-menu li a.mean-expand, .mobile-menu .mean-bar .mean-nav > ul li .sub-menu li .sub-menu ul li a.mean-expand, .mobile-menu .mean-bar .mean-nav > ul li .sub-menu li ul .sub-menu li a.mean-expand, .mobile-menu .mean-bar .mean-nav > ul li .sub-menu li ul ul li a.mean-expand, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li .sub-menu .sub-menu li a.mean-expand, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li .sub-menu ul li a.mean-expand, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li ul .sub-menu li a.mean-expand, .mobile-menu .mean-bar .mean-nav > ul li .mega-menu li ul ul li a.mean-expand, .mobile-menu .mean-bar .mean-nav > ul li ul li .sub-menu .sub-menu li a.mean-expand, .mobile-menu .mean-bar .mean-nav > ul li ul li .sub-menu ul li a.mean-expand, .mobile-menu .mean-bar .mean-nav > ul li ul li ul .sub-menu li a.mean-expand {
+  border: 1px solid #eeeeee;
+}
+
+.mobile-menu {
+  position: relative;
+}
+
+.meanmenu-reveal {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.mean-nav {
+  width: 100%;
+  background: #ddd;
+}

@@ -1,13 +1,17 @@
-import Header from "./components/Header"
-import HeroSlider from "./components/HeroSlider"
-import About from "./components/About"
-import Glossary from "./components/Glossary"
-import Feature from "./components/Features"
-import Footer from "./components/Footer"
-import AdminSec from "./components/AdminSec"
+import Header from "./components/Header/Header"
+import HeroSlider from "./components/HeroSlider/HeroSlider"
+import About from "./components/About/About"
+import Glossary from "./components/Glossary/Glossary"
+import Feature from "./components/Features/Features"
+import Footer from "./components/Footer/Footer"
+import AdminSec from "./components/AdminSec/AdminSec"
 
-import FakeLoader from "./components/FakeLoader"
+import FakeLoader from "./components/FakeLoader/FakeLoader"
 import Chatbot from "./components/Chatbot"
+
+import "./styles/bootstrap.min.css"
+import "./styles/plugins.css"
+import "./styles/global.css"
 
 const App = () => {
   return (

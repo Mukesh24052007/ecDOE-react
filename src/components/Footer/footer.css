@@ -1,0 +1,114 @@
+.footer-bg {
+  background: url(../images/bg/footer-bg.jpg);
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.footer-area {
+  margin-bottom: 0;
+}
+
+.footer-top {
+  color: #ffffff;
+}
+.footer-top .footer-logo {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; /* Match header height for consistency */
+}
+.footer-top .footer-logo img {
+  max-height: 60px; /* Match header logo size */
+  width: auto;
+  background: transparent; /* Ensure transparent background */
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 4px 12px;
+}
+.footer-top .footer-list {
+  margin-top: 30px;
+}
+.footer-top .footer-list ul li {
+  margin-bottom: 10px;
+}
+.footer-top .footer-list ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-bottom {
+    text-align: center;
+  }
+}
+.footer-bottom .social-link ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer-bottom .social-link ul li a {
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+}
+.footer-bottom .social-link ul li a:hover {
+  color: #09c7e0;
+}
+.footer-bottom .copy-right {
+  color: #ffffff;
+  float: right;
+}
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-bottom .copy-right {
+    float: inherit;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.footer-logo .logo-text {
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 12px;
+  font-weight: 500;
+}
+.footer-logo .logo-text .company-main {
+  color: #b3d1ff;
+}
+.footer-logo .logo-text .company-sub {
+  color: #b3d1ff;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a73e8; /* Example: blue from logo, adjust as needed */
+  margin-left: 12px;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  white-space: normal;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo-text {
+    margin-left: 5px;
+  }
+}
+.logo-text .company-main {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #032f6a;
+}
+.logo-text .company-sub {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: 1px;
+}

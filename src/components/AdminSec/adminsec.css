@@ -1,0 +1,31 @@
+.admin_sec {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  background-color: #f9fafb;
+}
+
+.admin_sec h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+.charts_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.chart {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 400px;
+}
+.chart h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}

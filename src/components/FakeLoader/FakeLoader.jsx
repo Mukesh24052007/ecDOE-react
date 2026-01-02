@@ -3,6 +3,8 @@ import {
   useState
 } from 'react'
 
+import "./fakeloader.css"
+
 const FakeLoader = ({
   timeToHide = 500,
   bgColor = "#09C7E0",

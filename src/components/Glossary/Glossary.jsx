@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import "./glossary.css"
+
 const Glossary = () => {
   const [wordsData] = useState([
     {

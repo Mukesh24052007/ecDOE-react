@@ -1,3 +1,5 @@
+import "./heroslider.css"
+
 const HeroSlider = () => {
   return (
     <div className="hero-slider hero-slider-1" id="slider">

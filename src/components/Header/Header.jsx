@@ -3,6 +3,8 @@ import {
   useState
 } from 'react'
 
+import "./header.css"
+
 const sections = ["slider", "about", "glossary", "feature"];
 
 const Header = () => {

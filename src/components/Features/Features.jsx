@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 
+import "./features.css"
+
 const Features = () => {
   useEffect(() => {
     // Load Genially embed script only once

@@ -13,6 +13,8 @@ import {
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
+import "./adminsec.css"
+
 const barData = [
   { game: "Grade 3", users: 120 },
   { game: "Grade 5", users: 200 },
